@@ -1,0 +1,183 @@
+ body {
+            font-family: 'Cormorant Infant', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        .feeds {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feed-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ebebeb;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px; /* Adjust as per your design */
+        }
+
+        .feed-item img {
+            max-width: 150px;
+            max-height: 2000px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .feed-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .feed-item .details {
+            flex-grow: 1;
+            padding-right: 20px;
+        }
+
+        .zoomable-image {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .popup, .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content, .popup-form, .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .close-popup, .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .request-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #987554;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .request-button:hover {
+            background-color: #765442;
+        }
+
+        .popup {
+            background-color: brown;
+            z-index: 1000;
+        }
+
+        .popup-form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        .popup-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .popup-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        .popup-form input[type="text"],
+        .popup-form input[type="password"],
+        .popup-form select {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .popup-form button[type="submit"] {
+            background-color: #765442;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .popup-form button[type="submit"]:hover {
+            background-color: #54382b;
+        }
+
+        .custom-input {
+            display: none;
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .feed-item {
+                max-width: 100%;
+            }
+        }

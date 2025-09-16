@@ -1,0 +1,180 @@
+ body {
+    
+    background-repeat:no-repeat;
+    /*background-position: center center;*/
+    text-align: center;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+#linebreak{
+    display:block;
+    margin-bottom: 0.5em;
+}
+
+ #Sellerbutton{
+    align-items: center;
+    background-color:transparent;
+    font-size: 90px;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 20%;
+    border-color:black;
+}
+
+#Buyerbutton{
+    align-items: center;
+    background-color:transparent;
+    font-size: 90px;
+    margin-left: 10%;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 20%;
+    border-color:black;
+}
+
+#link {
+    color:black;
+    text-decoration: none;
+}
+
+#link:hover{
+    color: rgb(155, 248, 4);
+    border-radius: 20%;
+    border-style: outset;
+    border-color: rgb(155, 248, 4);
+    font-weight: bolder;
+    border-width: 4px;
+}      
+body {
+    background-image: url('pic2.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Cormorant Infant', serif;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.form-container {
+    margin-top: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+
+.form-container input {
+  
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-container p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.form-container p a {
+    color: black;
+    text-decoration: underline;
+}
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+    .dashboard-menu {
+        width: 80px; /* Adjust menu width */
+    }
+    .dashboard-content {
+        margin-left: 100px; /* Adjust content margin */
+        width: 100%; /* Allow content to take full width */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .product-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .product-item img {
+        max-width: 100%; /* Ensure images resize proportionally */
+        margin: 10px auto; /* Center images */
+    }
+}
+/* Login/Register Form Styling */
+.form-container {
+    background: #efebe9; /* Light brown background */
+    border: 1px solid #8d6e63; /* Brown border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.form-container h1 {
+    color: #6d4c41; /* Dark brown heading */
+}
+
+.form-container label {
+    color: #6d4c41; /* Dark brown labels */
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"] {
+    border: 1px solid #6d4c41; /* Dark brown input borders */
+}
+
+.form-container button[type="submit"] {
+    background-color: #6d4c41; /* Dark brown submit button */
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #4e342e; /* Darken button on hover */
+}

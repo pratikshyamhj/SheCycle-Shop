@@ -1,0 +1,17 @@
+INSERT INTO `buyers`(`id`, `name`, `password`, `email`, `gender`, `location`, `province`, `city`, `district`, `created_at`, `verification_code`, `is_verified`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]')
+
+INSERT INTO `buyer_login`(`id`, `email`, `password`, `login_time`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
+
+INSERT INTO `clothes`(`id`, `description`, `price`, `size`, `photo`, `uploaded_at`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]')
+
+INSERT INTO `notifications`(`id`, `seller_id`, `buyer_id`, `product_id`, `message`, `timestamp`, `status`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')
+
+INSERT INTO `notification_buyer`(`id`, `buyer_id`, `seller_id`, `product_id`, `message`, `status`, `timestamp`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')
+
+INSERT INTO `products`(`id`, `seller_id`, `product_name`, `product_image`, `description`, `price`, `category`, `type`, `rental_period`, `status`, `created_at`, `updated_at`, `product_image2`, `product_image3`, `product_image4`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]','[value-13]','[value-14]','[value-15]')
+
+INSERT INTO `requests`(`id`, `buyer_id`, `product_id`, `status`, `requested_time`, `request_status`, `seller_id`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')
+
+INSERT INTO `sellers`(`id`, `name`, `password`, `email`, `gender`, `location`, `created_at`, `province`, `city`, `district`, `verification_code`, `is_verified`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]')
+
+INSERT INTO `seller_login`(`id`, `password`, `email`, `login_time`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
